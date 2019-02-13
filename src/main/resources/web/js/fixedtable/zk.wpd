@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="fixedtable" language="xul/html" depends="zul" >
+	<widget name="Fixedtable" />
+	<widget name="Tablecolumns" />
+	<widget name="Tablecolumn" />
+	<widget name="Tablerow" />
+	<widget name="Tablecell" />
+</package>

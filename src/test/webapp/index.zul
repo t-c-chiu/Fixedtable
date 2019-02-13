@@ -1,0 +1,70 @@
+<zk>
+	<window apply="test.ctrl.TestComposer">
+		<fixedtable id="table" width="400px" height="300px" onSelect=""
+					fixedTop="1" fixedRight="1" fixedBottom="1" fixedLeft="1">
+			<tablecolumns>
+				<forEach begin="1" end="10">
+					<tablecolumn width="80px"/>
+				</forEach>
+			</tablecolumns>
+			<forEach begin="1" end="10" var="i">
+				<tablerow>
+					<forEach begin="1" end="10" var="j">
+						<tablecell label="${i}-${j}"/>
+					</forEach>
+				</tablerow>
+			</forEach>
+		</fixedtable>
+		<hlayout>
+			<button id="addChild" label="addChild"/>
+			<button id="addLeft" label="left++"/>
+			<button id="addRight" label="right++"/>
+			<button id="addTop" label="top++"/>
+			<button id="addBottom" label="bottom++"/>
+		</hlayout>
+	</window>
+	<fixedtable width="400px" height="250px" fixedTop="1" fixedBottom="1"
+				fixedRight="1" fixedLeft="1">
+		<tablecolumns>
+			<forEach begin="1" end="6">
+				<tablecolumn width="80px"/>
+			</forEach>
+		</tablecolumns>
+		<tablerow>
+			<tablecell label="cell" colspan="2"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+		</tablerow>
+		<tablerow>
+			<tablecell label="cell"/>
+			<tablecell label="cell" colspan="3"/>
+			<tablecell label="cell"/>
+		</tablerow>
+		<tablerow>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell" rowspan="3"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+		</tablerow>
+		<tablerow>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+		</tablerow>
+		<tablerow>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+		</tablerow>
+		<tablerow>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell"/>
+			<tablecell label="cell" colspan="2"/>
+		</tablerow>
+	</fixedtable>
+</zk>

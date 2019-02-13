@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk>
+	<client-config>
+		<debug-js>true</debug-js>
+	</client-config>
+	<device-config>
+		<device-type>ajax</device-type>
+		<timeout-uri></timeout-uri><!-- An empty URL can cause the browser to reload the same URL -->
+	</device-config>
+	<session-config>
+		<timer-keep-alive>true</timer-keep-alive>
+	</session-config>
+	<library-property>
+		<name>org.zkoss.zk.WPD.cache</name>
+		<value>false</value>
+	</library-property>
+	<library-property>
+		<name>org.zkoss.zk.WCS.cache</name>
+		<value>false</value>
+	</library-property>
+</zk>
